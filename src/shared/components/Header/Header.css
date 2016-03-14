@@ -1,0 +1,68 @@
+header {
+  overflow: hidden;
+}
+
+header nav a {
+  margin: 30px 15px;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header nav a.nav-link.color-grey:hover {
+  color: #999;
+}
+
+header img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+header.subheader {
+  margin: 0;
+  padding: 15px 15px;
+  background-color: rgba(238, 238, 237, 0.42);
+}
+
+a.logo {
+  text-indent: -9999px;
+  width: 65px;
+  height: 35px;
+  background: url("/img/logo.png") no-repeat;
+  background-size: cover;
+  display: block;
+  float: left;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+header .app {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0 15px;
+  color: #999;
+  position: relative;
+}
+
+header .app span.label {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+header .app img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  border-radius: 100%;
+}
