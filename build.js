@@ -25,7 +25,8 @@ fs.readdirSync(dir).forEach(function(file) {
     date: vars.date,
     title: vars.title,
     content: content,
-    author: vars.author
+    author: vars.author,
+    layout: vars.layout
   });
 });
 

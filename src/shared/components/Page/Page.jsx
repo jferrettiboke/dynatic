@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header.jsx';
 
-export default class Post extends React.Component {
+export default class Page extends React.Component {
   render() {
     return (
       <div>
@@ -11,10 +11,6 @@ export default class Post extends React.Component {
             <div className="row">
               <div className="col-md-8 col-md-offset-2">
                 <div className="p-y-3" dangerouslySetInnerHTML={this.props.content}></div>
-                <div className="text-muted p-b-3">
-                  <img className="img-circle m-r-1" style={{height: 25, width: 25}} src="/img/logo.png" alt="..." />
-                  {this.props.author} · {this.props.date}
-                </div>
               </div>
             </div>
           </div>
