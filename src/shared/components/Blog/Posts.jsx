@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import marked from 'marked';
-import posts from '../../../../collections/posts.json';
+import posts from '../../../../data/collection.json';
 
 export default class Posts extends React.Component {
   rawMarkup(text) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import marked from 'marked';
-import posts from '../../../collections/posts.json';
+import posts from '../../../data/collection.json';
 
 import Post from './Blog/Post.jsx';
 import Page from './Page/Page.jsx';

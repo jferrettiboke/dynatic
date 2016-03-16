@@ -2,13 +2,17 @@ var fs = require('fs');
 var path = require('path');
 var fm = require('front-matter');
 
-var posts = [];
-var dir = path.join(__dirname, 'data/posts');
+var collection = [];
+var dir = path.join(__dirname, 'data');
 
 fs.readdirSync(dir).forEach(function(file) {
+  var fileName = file.split('.');
+  var fileIndex = fileName.length - 1;
+  var fileExtension = fileName[fileIndex];
+  if (fileExtension !== 'md') return;
   var data = fs.readFileSync(dir + '/' + file, 'utf8');
   var content = fm(data);
-  posts.push({
+  collection.push({
     title: content.attributes.title,
     slug: content.attributes.slug,
     date: content.attributes.date,
@@ -18,4 +22,4 @@ fs.readdirSync(dir).forEach(function(file) {
   });
 });
 
-fs.writeFileSync('./collections/posts.json', JSON.stringify(posts), 'utf-8');
+fs.writeFileSync('./data/collection.json', JSON.stringify(collection), 'utf-8');
