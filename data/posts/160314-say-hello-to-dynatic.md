@@ -1,10 +1,10 @@
-%%%
+---
 slug: say-hello-to-dynatic
 title: Say hello to Dynatic
 date: 14/03/2016
 author: Dynatic
 layout: Post
-%%%
+---
 
 # Say hello to Dynatic
 
