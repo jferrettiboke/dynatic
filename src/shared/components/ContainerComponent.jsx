@@ -7,18 +7,21 @@ export default class ContainerComponent extends React.Component {
   constructor(props, context) {
     super(props);
     this.context = context;
-    this.components = boot;
     this.data = _.find(collection, {'slug': this.props.params.any});
-
-    /*
     if (this.data == undefined) {
+      this.component = <div></div>;
       this.context.router.replace('/');
+    } else {
+      this.component = this.createComponent(boot[this.data.layout], this.data);
     }
-    */
+  }
+
+  createComponent(name, props = {}) {
+    return React.createElement(name, props);
   }
 
   render() {
-    return React.createElement(this.components[this.data.layout], this.data);
+    return this.component
   }
 }
 
