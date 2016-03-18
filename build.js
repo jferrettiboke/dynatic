@@ -22,4 +22,4 @@ fs.readdirSync(dir).forEach(function(file) {
   });
 });
 
-fs.writeFileSync('./data/collection.json', JSON.stringify(collection), 'utf-8');
+fs.writeFileSync('./data/__collection.json', JSON.stringify(collection, null, '\t'), 'utf-8');

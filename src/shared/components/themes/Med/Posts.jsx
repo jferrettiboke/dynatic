@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import marked from 'marked';
-import posts from '../../../../data/collection.json';
+import collection from '../../../../../data/__collection.json';
 
 export default class Posts extends React.Component {
   rawMarkup(text) {
@@ -16,16 +16,16 @@ export default class Posts extends React.Component {
     return (
       <div>
         {
-          posts.map((post, index) => {
+          collection.map((data, index) => {
             return (
               <article className="m-b-3" key={index}>
                 <h2>
-                  <Link to={`/${post.slug}`}>{post.title}</Link>
+                  <Link to={`/${data.slug}`}>{data.title}</Link>
                 </h2>
-                <p dangerouslySetInnerHTML={this.rawMarkup(post.content)}></p>
+                <p dangerouslySetInnerHTML={this.rawMarkup(data.content)}></p>
                 <div className="text-muted">
                   <img className="img-circle m-r-1" style={{height: 25, width: 25}} src="/img/logo.png" alt="..." />
-                  {post.author} · {post.date}
+                  {data.author} · {data.date}
                 </div>
               </article>
             );

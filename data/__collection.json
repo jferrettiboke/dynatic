@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Say hello to Dynatic",
+		"slug": "say-hello-to-dynatic",
+		"date": "14/03/2016",
+		"author": "Dynatic",
+		"layout": "Post",
+		"content": "\r\n# Say hello to Dynatic\r\n\r\n---\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor\r\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\r\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\r\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\r\nfugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\nculpa qui officia deserunt mollit anim id est laborum.\r\n\r\n| Tables        | Are           | Cool  |\r\n| ------------- |:-------------:| -----:|\r\n| col 3 is      | right-aligned | $1600 |\r\n| col 2 is      | centered      |   $12 |\r\n| zebra stripes | are neat      |    $1 |\r\n\r\n```markdown\r\n---\r\nslug: say-hello-to-dynatic\r\ntitle: Say hello to Dynatic\r\ndate: 14/03/2016\r\nauthor: Dynatic\r\nlayout: Post\r\n---\r\n\r\n# Say hello to Dynatic\r\n\r\n---\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor\r\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\r\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\r\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\r\nfugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\nculpa qui officia deserunt mollit anim id est laborum.\r\n\r\n| Tables        | Are           | Cool  |\r\n| ------------- |:-------------:| -----:|\r\n| col 3 is      | right-aligned | $1600 |\r\n| col 2 is      | centered      |   $12 |\r\n| zebra stripes | are neat      |    $1 |\r\n\r\n```\r\n"
+	},
+	{
+		"title": "This is a page",
+		"slug": "this-is-a-page",
+		"date": "15/03/2016",
+		"author": "Dynatic",
+		"layout": "Page",
+		"content": "\r\n# This is a page\r\n\r\n---\r\n\r\nThis is a page because we are using `layout: Page`.\r\n\r\n```markdown\r\n---\r\nslug: this-is-a-page\r\ntitle: This is a page\r\ndate: 15/03/2016\r\nauthor: Dynatic\r\nlayout: Page\r\n---\r\n\r\n# This is a page\r\n\r\n---\r\n\r\nThis is a page because we are using `layout: Page`.\r\n```\r\n"
+	}
+]

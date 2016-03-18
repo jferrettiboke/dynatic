@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Header/Header.jsx';
-import Blog from '../Blog/Blog.jsx';
+import Header from './Header.jsx';
+import Blog from './Blog.jsx';
 
 export default class Landing extends React.Component {
   render() {

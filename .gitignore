@@ -1,7 +1,6 @@
 # Custom
 
 ### General ###
-collections
 dist/*.js
 dist/public/*.js
 dist/public/css

@@ -1,47 +1,27 @@
 import React from 'react';
 import _ from 'lodash';
-import marked from 'marked';
-import posts from '../../../data/collection.json';
-
-import Post from './Blog/Post.jsx';
-import Page from './Page/Page.jsx';
+import collection from '../../../data/__collection.json';
+import boot from './boot.js';
 
 export default class ContainerComponent extends React.Component {
   constructor(props, context) {
     super(props);
     this.context = context;
-    this.resource = _.find(posts, {'slug': this.props.params.any});
+    this.components = boot;
+    this.data = _.find(collection, {'slug': this.props.params.any});
 
     /*
-    if (this.resource == undefined) {
+    if (this.data == undefined) {
       this.context.router.replace('/');
     }
     */
-
-    this.components = [];
-    this.components['Post'] = <Post content={this.rawMarkup(this.resource.content)} date={this.resource.date} author={this.resource.author} />;
-    this.components['Page'] = <Page content={this.rawMarkup(this.resource.content)} />;
-  }
-
-  rawMarkup(text) {
-    var renderer = new marked.Renderer();
-    renderer.table = function (header, body) {
-      return `
-        <table class="table">
-          ${header}
-          ${body}
-        </table>
-      `;
-    };
-    var rawMarkup = marked(text, {sanitize: true, renderer: renderer});
-    return { __html: rawMarkup };
   }
 
   render() {
-    return this.components[this.resource.layout]
+    return React.createElement(this.components[this.data.layout], this.data);
   }
 }
 
-Post.contextTypes = {
+ContainerComponent.contextTypes = {
   router: React.PropTypes.object.isRequired
 };
