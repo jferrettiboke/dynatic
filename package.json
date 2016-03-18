@@ -8,7 +8,7 @@
     "build-collections": "node build.js",
     "generate": "wget --recursive --convert-links --page-requisites --no-parent --directory-prefix static2 --no-host-directories --restrict-file-names=unix http://localhost:8080/",
     "lint": "eslint src",
-    "start": "set NODE_ENV=development && nodemon dist/server",
+    "start": "nodemon dist/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jesús Ferretti",

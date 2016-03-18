@@ -13,3 +13,7 @@ export function rawMarkup (text) {
   var rawMarkup = marked(text, {sanitize: true, renderer: renderer});
   return { __html: rawMarkup };
 }
+
+export function renderHighlightCode () {
+  window.Prism.highlightAll();
+}
