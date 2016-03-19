@@ -10,6 +10,9 @@ export function rawMarkup (text) {
       </table>
     `;
   };
+  renderer.image = function (href, title, text) {
+    return `<img class="img-fluid" src="${href}" title="${title}" alt="${title}"`;
+  };
   var rawMarkup = marked(text, {renderer: renderer});
   return { __html: rawMarkup };
 }
