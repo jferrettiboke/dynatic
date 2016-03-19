@@ -16,7 +16,7 @@ export default class Posts extends React.Component {
     return (
       <div>
         {
-          collection.map((data, index) => {
+          collection.filter(data => data.layout == 'Post').map((data, index) => {
             return (
               <article className="m-b-3" key={index}>
                 <h2>

@@ -16,6 +16,7 @@ export default class Header extends React.Component {
                 </nav>
                 <nav className="nav pull-xs-right">
                   <Link className="nav-link color-grey" to="/">Home</Link>
+                  <Link className="nav-link color-grey" to="/docs">Docs</Link>
                   <a href="https://github.com/jferrettiboke/dynatic" target="_blank" className="btn btn-primary-outline">GitHub</a>
                 </nav>
               </div>

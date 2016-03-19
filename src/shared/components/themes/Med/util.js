@@ -10,7 +10,7 @@ export function rawMarkup (text) {
       </table>
     `;
   };
-  var rawMarkup = marked(text, {sanitize: true, renderer: renderer});
+  var rawMarkup = marked(text, {renderer: renderer});
   return { __html: rawMarkup };
 }
 
