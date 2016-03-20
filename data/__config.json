@@ -1,0 +1,18 @@
+{
+  "title": "Dynatic",
+  "description": "",
+  "currentTheme": "Med",
+  "social": [
+    {
+      "type": "twitter",
+      "user": "@jferrettiboke",
+      "link": "https://twitter.com/jferrettiboke"
+    }
+  ],
+  "themes": [
+    {
+      "Med": {},
+      "Hype": {}
+    }
+  ]
+}
