@@ -20,7 +20,7 @@ export default class Posts extends React.Component {
             return (
               <article className="m-b-3" key={index}>
                 <h2>
-                  <Link to={`/${data.slug}`}>{data.title}</Link>
+                  <Link to={`${data.slug}`}>{data.title}</Link>
                 </h2>
                 <p dangerouslySetInnerHTML={this.rawMarkup(data.content)}></p>
                 <div className="text-muted">

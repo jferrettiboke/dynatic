@@ -1,5 +1,5 @@
 ---
-slug: say-hello-to-dynatic
+slug: /say-hello-to-dynatic
 title: Say hello to Dynatic
 date: 14/03/2016
 author: Dynatic

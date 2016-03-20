@@ -11,7 +11,7 @@ export default class ContainerComponent extends React.Component {
 
   getComponent() {
     let component;
-    this.data = _.find(collection, {'slug': this.props.params.any});
+    this.data = _.find(collection, {'slug': this.props.location.pathname});
     if (this.data == undefined) {
       component = <div></div>;
       this.context.router.replace('/');
