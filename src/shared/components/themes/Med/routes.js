@@ -7,6 +7,6 @@ import Landing from './Landing.jsx';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={Landing} />
-    <Route path=":any" component={ContainerComponent} />
+    <Route path="*" component={ContainerComponent} />
   </Route>
 );

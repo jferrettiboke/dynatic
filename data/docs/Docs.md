@@ -1,5 +1,5 @@
 ---
-slug: docs
+slug: /docs
 title: Docs
 layout: Page
 ---
