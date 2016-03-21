@@ -1,4 +1,5 @@
 import config from '../../../data/__config.json';
-var selectedThemeModule = './themes/'+config.currentTheme+'/boot.js';
-const Theme = require(selectedThemeModule);
-export default Theme.default;
+
+const theme = require(`./themes/${config.currentTheme}/boot.js`);
+
+export default theme.default;
