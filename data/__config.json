@@ -1,14 +1,19 @@
 {
   "title": "Dynatic",
-  "description": "",
-  "currentTheme": "Med",
-  "social": [
-    {
-      "type": "twitter",
-      "user": "@jferrettiboke",
-      "link": "https://twitter.com/jferrettiboke"
-    }
-  ],
+  "description": "A web platform useful, easy to write and dynamic that use static markdown files to display the content you want",
+  "currentTheme": "Hype",
+  "profileImage": "https://pbs.twimg.com/profile_images/697078453158481920/MYmoKTis.jpg",
+  "social": {
+      "twitter":{
+        "user": "@ivanbtrujillo",
+        "link": "https://twitter.com/ivanbtrujillo"
+      },
+      "youtube":{
+        "user": "ivanbtrujillo",
+        "link": "https://www.youtube.com/channel/UCwYer9-eMNx0nTqyrLqvm6g"
+      }
+
+  },
   "themes": [
     {
       "Med": {},
