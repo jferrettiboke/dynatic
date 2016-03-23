@@ -25,7 +25,6 @@ recursive(dir, function (err, files) {
       date: content.attributes.date,
       author: content.attributes.author,
       layout: content.attributes.layout,
-      cover : content.attributes.cover,
       content: content.body,
     });
   });

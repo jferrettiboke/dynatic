@@ -4,8 +4,7 @@ title: Say hello to Dynatic
 date: 14/03/2016
 author: Dynatic
 layout: Post
-cover: >
-  https://images.unsplash.com/photo-1422157245273-e08b638b4b00?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=fa44b326fa5476c4bfc3572d4d9820bf
+
 ---
 
 # Say hello to Dynatic
