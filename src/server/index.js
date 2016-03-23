@@ -20,13 +20,11 @@ function renderPage(appHtml) {
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400italic,500,500italic,700,700italic,400,900,900italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/lib/prism/prism.css">
       </head>
       <body>
         <div id="root">${appHtml}</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-        <script src="/lib/prism/prism.min.js"></script>
         <script src="/bundle.js"></script>
       </body>
     </html>
