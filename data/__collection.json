@@ -3,12 +3,14 @@
 		"slug": "/docs",
 		"title": "Docs",
 		"layout": "Page",
+		"component": "Page",
 		"content": "\n# Docs\n\n## Contents\n\n  * [Installation](#installation)\n  * [Getting started](#getting-started)\n  * [Application structure](#application-structure)\n  * [Configuration](#configuration)\n  * [Front matter](#front-matter)\n  * [Layouts](#layouts)\n  * [Styling](#styling)\n  * [Writing](#writing)\n  * [Collections](#collections)\n  * [Deployment](#deployment)\n  * [Themes](#themes)\n\n## Installation\n\nEasy! You just need to have **Git** installed and execute the next command from\nwherever you want on your terminal.\n\n```markdown\n$ git clone https://github.com/jferrettiboke/dynatic.git <PROJECT NAME>\n```\n\n## Getting started\n\nBuild the Markdown files.\n\n```markdown\n$ npm run build-collections\n```\n\nBuild the application on server and client side and watch for future changes.\n\n```markdown\n$ npm run build\n```\n\nRun the universal application and watch for future changes.\n\n```markdown\n$ npm run start\n```\n\n## Application structure\n## Configuration\n## Front matter\n## Layouts\n## Styling\n## Writing\n## Collections\n## Deployment\n## Themes\n"
 	},
 	{
 		"slug": "/docs/getting-started",
 		"title": "Getting started",
 		"layout": "Page",
+		"component": "Page",
 		"content": "\n# Getting started\n"
 	},
 	{
@@ -17,6 +19,7 @@
 		"date": "14/03/2016",
 		"author": "Dynatic",
 		"layout": "Post",
+		"component": "Post",
 		"content": "\n# Say hello to Dynatic\n\n---\n\n![Amazing views](https://pixabay.com/static/uploads/photo/2016/02/07/19/49/snow-1185469_960_720.jpg \"Amazing\")\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\nfugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\nculpa qui officia deserunt mollit anim id est laborum.\n\n| Tables        | Are           | Cool  |\n| ------------- |:-------------:| -----:|\n| col 3 is      | right-aligned | $1600 |\n| col 2 is      | centered      |   $12 |\n| zebra stripes | are neat      |    $1 |\n\n```markdown\n---\nslug: say-hello-to-dynatic\ntitle: Say hello to Dynatic\ndate: 14/03/2016\nauthor: Dynatic\nlayout: Post\n---\n\n# Say hello to Dynatic\n\n---\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\nfugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\nculpa qui officia deserunt mollit anim id est laborum.\n\n| Tables        | Are           | Cool  |\n| ------------- |:-------------:| -----:|\n| col 3 is      | right-aligned | $1600 |\n| col 2 is      | centered      |   $12 |\n| zebra stripes | are neat      |    $1 |\n\n```\n"
 	}
 ]

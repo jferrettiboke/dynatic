@@ -22,8 +22,8 @@ recursive(dir, function (err, files) {
     var props = _.assign(content.attributes, {
       title: content.attributes.title,
       slug: content.attributes.slug,
-      layout: content.attributes.layout,
-      content: content.body,
+      component: content.attributes.component || content.attributes.layout,
+      content: content.body
     });
 
     collection.push(props);
