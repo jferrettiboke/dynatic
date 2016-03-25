@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import _ from 'lodash';
 import collection from '../../../data/__collection.json';
 import boot from './boot.js';
@@ -9,9 +10,13 @@ export default class ContainerComponent extends React.Component {
     this.context = context;
   }
 
+  getData() {
+    return _.find(collection, {'slug': this.props.location.pathname});
+  }
+
   getComponent() {
     let component;
-    this.data = _.find(collection, {'slug': this.props.location.pathname});
+    this.data = this.getData();
     if (this.data == undefined) {
       component = <div></div>;
       this.context.router.replace('/');
@@ -22,7 +27,13 @@ export default class ContainerComponent extends React.Component {
   }
 
   render() {
-    return this.getComponent()
+    const data = this.getData();
+    return (
+      <div>
+        <Helmet title={data.title} />
+        {this.getComponent()}
+      </div>
+    );
   }
 }
 
