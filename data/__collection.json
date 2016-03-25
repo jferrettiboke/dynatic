@@ -1,19 +1,19 @@
 [
 	{
-		"title": "Docs",
 		"slug": "/docs",
+		"title": "Docs",
 		"layout": "Page",
 		"content": "\n# Docs\n\n## Contents\n\n  * [Installation](#installation)\n  * [Getting started](#getting-started)\n  * [Application structure](#application-structure)\n  * [Configuration](#configuration)\n  * [Front matter](#front-matter)\n  * [Layouts](#layouts)\n  * [Styling](#styling)\n  * [Writing](#writing)\n  * [Collections](#collections)\n  * [Deployment](#deployment)\n  * [Themes](#themes)\n\n## Installation\n\nEasy! You just need to have **Git** installed and execute the next command from\nwherever you want on your terminal.\n\n```markdown\n$ git clone https://github.com/jferrettiboke/dynatic.git <PROJECT NAME>\n```\n\n## Getting started\n\nBuild the Markdown files.\n\n```markdown\n$ npm run build-collections\n```\n\nBuild the application on server and client side and watch for future changes.\n\n```markdown\n$ npm run build\n```\n\nRun the universal application and watch for future changes.\n\n```markdown\n$ npm run start\n```\n\n## Application structure\n## Configuration\n## Front matter\n## Layouts\n## Styling\n## Writing\n## Collections\n## Deployment\n## Themes\n"
 	},
 	{
-		"title": "Getting started",
 		"slug": "/docs/getting-started",
+		"title": "Getting started",
 		"layout": "Page",
 		"content": "\n# Getting started\n"
 	},
 	{
-		"title": "Say hello to Dynatic",
 		"slug": "/say-hello-to-dynatic",
+		"title": "Say hello to Dynatic",
 		"date": "14/03/2016",
 		"author": "Dynatic",
 		"layout": "Post",

@@ -1,5 +1,6 @@
 var fs = require('fs');
 var path = require('path');
+var _ = require('lodash');
 var fm = require('front-matter');
 var recursive = require('recursive-readdir');
 
@@ -18,15 +19,14 @@ recursive(dir, function (err, files) {
 
     var data = fs.readFileSync(path.join(__dirname, 'data', fileName), 'utf8');
     var content = fm(data);
-
-    collection.push({
+    var props = _.assign(content.attributes, {
       title: content.attributes.title,
       slug: content.attributes.slug,
-      date: content.attributes.date,
-      author: content.attributes.author,
       layout: content.attributes.layout,
       content: content.body,
     });
+
+    collection.push(props);
   });
 
   fs.writeFileSync('./data/__collection.json', JSON.stringify(collection, null, '\t'), 'utf-8');
