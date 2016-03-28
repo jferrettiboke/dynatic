@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --watch",
     "build-collections": "node build.js",
+    "clean": "rm -rf dist",
     "generate": "wget --recursive --convert-links --page-requisites --no-parent --directory-prefix static2 --no-host-directories --restrict-file-names=unix http://localhost:8080/",
     "lint": "eslint src",
     "start": "nodemon dist/server",
@@ -45,6 +46,7 @@
     "style-loader": "^0.13.0",
     "stylelint": "^4.4.0",
     "stylelint-config-standard": "^3.0.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   }
