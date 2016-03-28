@@ -1,9 +1,7 @@
 # Custom
 
 ### General ###
-dist/*.js
-dist/public/*.js
-dist/public/css
+dist
 
 # Created by https://www.gitignore.io/api/linux,osx,windows,node,bower,sublimetext
 
