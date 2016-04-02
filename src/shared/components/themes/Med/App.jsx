@@ -15,7 +15,8 @@ export default class App extends React.Component {
           ]}
           link={[
             {"rel": "stylesheet", "href": "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css", "integrity": "sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd", "crossorigin": "anonymous"},
-            {"rel": "stylesheet", "href": "https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400italic,500,500italic,700,700italic,400,900,900italic"}
+            {"rel": "stylesheet", "href": "https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400italic,500,500italic,700,700italic,400,900,900italic"},
+            {"rel": "stylesheet", "href": "/css/styles.css"}
           ]}
         />
         {this.props.children}

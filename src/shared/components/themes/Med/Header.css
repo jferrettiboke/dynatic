@@ -18,23 +18,11 @@ header nav a.nav-link.color-grey:hover {
   color: #999;
 }
 
-header img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-header.subheader {
-  margin: 0;
-  padding: 15px 15px;
-  background-color: rgba(238, 238, 237, 0.42);
-}
-
 a.logo {
   text-indent: -9999px;
   width: 65px;
   height: 35px;
-  background: url("/img/logo.png") no-repeat;
+  background: url('./assets/images/logo.png') no-repeat;
   background-size: cover;
   display: block;
   float: left;
@@ -42,27 +30,14 @@ a.logo {
   margin-right: 20px;
 }
 
-header .app {
-  display: block;
-  float: left;
-  text-align: center;
-  font-size: 0.9em;
-  margin: 0 15px;
-  color: #999;
-  position: relative;
+.decorator-loading {
+  background: linear-gradient(45deg, #fb9797, #fde0a5, #9fffd5, #92bbff);
+  background-size: 800% 800%;
+  animation: Gradient 59s ease infinite;
 }
 
-header .app span.label {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-}
-
-header .app img {
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin: 0 auto;
-  margin-bottom: 7px;
-  border-radius: 100%;
+@keyframes Gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 51%; }
+  100% { background-position: 0% 50%; }
 }

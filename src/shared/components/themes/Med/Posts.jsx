@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import marked from 'marked';
 import collection from '../../../../../data/__collection.json';
+import image from './assets/images/logo.png';
 
 export default class Posts extends React.Component {
   rawMarkup(text) {
@@ -24,7 +25,7 @@ export default class Posts extends React.Component {
                 </h2>
                 <p dangerouslySetInnerHTML={this.rawMarkup(data.content)}></p>
                 <div className="text-muted">
-                  <img className="img-circle m-r-1" style={{height: 25, width: 25}} src="/img/logo.png" alt="..." />
+                  <img className="img-circle m-r-1" style={{height: 25, width: 25}} src={image} alt="..." />
                   {data.author} · {data.date}
                 </div>
               </article>
