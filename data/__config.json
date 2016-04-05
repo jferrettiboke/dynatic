@@ -1,6 +1,6 @@
 {
   "title": "Dynatic",
-  "description": "",
+  "description": "An easy content generator for websites and blogs with Markdown, built with React, PostCSS and much more.",
   "currentTheme": "Med",
   "social": [
     {

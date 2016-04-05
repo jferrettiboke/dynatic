@@ -10,7 +10,7 @@ export default class Landing extends React.Component {
         <Helmet
           title="Dynatic"
           meta={[
-            {"name": "description", "content": "The most powerful and easiest static content generator for websites and blogs with Markdown, React, PostCSS and much more."}
+            {"name": "description", "content": "An easy content generator for websites and blogs with Markdown, built with React, PostCSS and much more."}
           ]}
         />
         <Header />
@@ -19,7 +19,7 @@ export default class Landing extends React.Component {
             <div className="row">
               <div className="col-md-8 col-md-offset-2">
                 <h1 className="text-multicolor">Dynatic</h1>
-                <p className="lead p-t-1">The most powerful and easiest static content generator for websites and blogs with Markdown, React, PostCSS and much more.</p>
+                <p className="lead p-t-1">An easy content generator for websites and blogs with Markdown, built with React, PostCSS and much more.</p>
                 <p className="p-t-1">
                   <iframe src="https://ghbtns.com/github-btn.html?user=jferrettiboke&repo=dynatic&type=star&count=true&size=large" frameBorder="0" scrolling="0" width="160px" height="30px"></iframe>
                   <iframe src="https://ghbtns.com/github-btn.html?user=jferrettiboke&repo=dynatic&type=fork&count=true&size=large" frameBorder="0" scrolling="0" width="158px" height="30px"></iframe>
