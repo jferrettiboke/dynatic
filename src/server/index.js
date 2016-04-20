@@ -14,10 +14,11 @@ app.use(express.static(path.join(__dirname, '/../../dist/public')));
 function renderPage(appHtml, head) {
   return `
     <!DOCTYPE html>
-    <html lang="en">
-      <head ${head.htmlAttributes.toString()}>
-        ${head.meta.toString()}
+    <html ${head.htmlAttributes.toString()}>
+      <head>
+        <meta charset="utf-8" />
         ${head.title.toString()}
+        ${head.meta.toString()}
         ${head.link.toString()}
       </head>
       <body>
