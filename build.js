@@ -23,6 +23,7 @@ recursive(dir, function (err, files) {
       title: content.attributes.title,
       slug: content.attributes.slug,
       component: content.attributes.component || content.attributes.layout,
+      lang: content.attributes.lang || '',
       content: content.body
     });
 
