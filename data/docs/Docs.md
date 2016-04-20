@@ -1,6 +1,7 @@
 ---
 slug: /docs
 title: Docs
+lang: en
 layout: Page
 ---
 
