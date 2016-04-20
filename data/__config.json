@@ -2,16 +2,11 @@
   "title": "Dynatic",
   "description": "An easy content generator for websites and blogs with Markdown, built with React, PostCSS and much more.",
   "currentTheme": "Med",
-  "social": [
-    {
-      "type": "twitter",
-      "user": "@jferrettiboke",
-      "link": "https://twitter.com/jferrettiboke"
-    }
-  ],
-  "themes": [
-    {
-      "Med": {}
-    }
-  ]
+  "social": {
+    "twitter": "jferrettiboke",
+    "github": "jferrettiboke"
+  },
+  "themes": {
+    "Med": {}
+  }
 }
