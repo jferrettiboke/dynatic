@@ -1,9 +1,7 @@
 # Dynatic
 
-A web platform useful, easy to write and dynamic that use static markdown files
-to display the content you want.
-
-Built with React and the last technologies.
+A modern static and dynamic website generator built with React and the last top 
+technologies.
 
 ## Contributing
 
