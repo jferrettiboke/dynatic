@@ -23,7 +23,7 @@ const ItemDetail = props => (
       title={props.title}
     />
     <main>
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2">
             <article>
