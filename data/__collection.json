@@ -1,28 +1,39 @@
 [
 	{
-		"slug": "/docs",
+		"route": "/",
+		"title": "Dynatic",
+		"lang": "en",
+		"layout": "Landing",
+		"content": ""
+	},
+	{
+		"route": "/docs",
 		"title": "Docs",
 		"lang": "en",
-		"layout": "Page",
-		"component": "Page",
-		"content": "\r\n# Docs\r\n\r\n## Contents\r\n\r\n  * [Installation](#installation)\r\n  * [Getting started](#getting-started)\r\n  * [Application structure](#application-structure)\r\n  * [Configuration](#configuration)\r\n  * [Front matter](#front-matter)\r\n  * [Layouts](#layouts)\r\n  * [Styling](#styling)\r\n  * [Writing](#writing)\r\n  * [Collections](#collections)\r\n  * [Deployment](#deployment)\r\n  * [Themes](#themes)\r\n\r\n## Installation\r\n\r\nEasy! You just need to have **Git** installed and execute the next command from\r\nwherever you want on your terminal.\r\n\r\n```markdown\r\n$ git clone https://github.com/jferrettiboke/dynatic.git <PROJECT NAME>\r\n```\r\n\r\n## Getting started\r\n\r\nBuild the Markdown files.\r\n\r\n```markdown\r\n$ npm run build-collections\r\n```\r\n\r\nBuild the application on server and client side and watch for future changes.\r\n\r\n```markdown\r\n$ npm run build\r\n```\r\n\r\nRun the universal application and watch for future changes.\r\n\r\n```markdown\r\n$ npm run start\r\n```\r\n\r\n## Application structure\r\n## Configuration\r\n## Front matter\r\n## Layouts\r\n## Styling\r\n## Writing\r\n## Collections\r\n## Deployment\r\n## Themes\r\n"
+		"layout": "ItemDetail",
+		"backgroundImage": "https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=1&auto=format&crop=entropy&fit=crop&w=1366&h=769&q=80",
+		"content": "\n# Docs!\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
 	},
 	{
-		"slug": "/docs/getting-started",
-		"title": "Getting started",
+		"route": "/2016/06/16/hello-world",
+		"title": "Hello World!",
 		"lang": "en",
-		"layout": "Page",
-		"component": "Page",
-		"content": "\r\n# Getting started\r\n"
-	},
-	{
-		"slug": "/say-hello-to-dynatic",
-		"title": "Say hello to Dynatic",
-		"date": "14/03/2016",
+		"layout": "ItemDetail",
+		"backgroundImage": "https://images.unsplash.com/photo-1461016951828-c09537329b3a?dpr=1&auto=format&crop=entropy&fit=crop&w=1366&h=1025&q=80",
+		"category": "post",
 		"author": "Dynatic",
+		"date": "Jun 16, 2016",
+		"content": "\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n```js\nimport Landing from './Landing/Landing';\nimport ItemDetail from './Item/ItemDetail';\nimport Container from './ui/Container/Container';\n\nexport default ({\n  Landing,\n  ItemDetail,\n  Container\n});\n```\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
+	},
+	{
+		"route": "/2016/06/16/bye-world",
+		"title": "Bye World!",
 		"lang": "en",
-		"layout": "Post",
-		"component": "Post",
-		"content": "\r\n# Say hello to Dynatic\r\n\r\n---\r\n\r\n![Amazing views](https://pixabay.com/static/uploads/photo/2016/02/07/19/49/snow-1185469_960_720.jpg \"Amazing\")\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor\r\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\r\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\r\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\r\nfugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\nculpa qui officia deserunt mollit anim id est laborum.\r\n\r\n| Tables        | Are           | Cool  |\r\n| ------------- |:-------------:| -----:|\r\n| col 3 is      | right-aligned | $1600 |\r\n| col 2 is      | centered      |   $12 |\r\n| zebra stripes | are neat      |    $1 |\r\n\r\n```markdown\r\n---\r\nslug: say-hello-to-dynatic\r\ntitle: Say hello to Dynatic\r\ndate: 14/03/2016\r\nauthor: Dynatic\r\nlayout: Post\r\n---\r\n\r\n# Say hello to Dynatic\r\n\r\n---\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor\r\nincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\r\nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\r\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\r\nfugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\nculpa qui officia deserunt mollit anim id est laborum.\r\n\r\n| Tables        | Are           | Cool  |\r\n| ------------- |:-------------:| -----:|\r\n| col 3 is      | right-aligned | $1600 |\r\n| col 2 is      | centered      |   $12 |\r\n| zebra stripes | are neat      |    $1 |\r\n\r\n```\r\n"
+		"layout": "ItemDetail",
+		"backgroundImage": "https://images.unsplash.com/photo-1451906278231-17b8ff0a8880",
+		"category": "post",
+		"author": "Dynatic",
+		"date": "Jun 16, 2016",
+		"content": "\n![alt text](./logo.png \"Logo Title Text 1\")\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n```js\nimport Landing from './Landing/Landing';\nimport ItemDetail from './Item/ItemDetail';\nimport Container from './ui/Container/Container';\n\nexport default ({\n  Landing,\n  ItemDetail,\n  Container\n});\n```\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n"
 	}
 ]

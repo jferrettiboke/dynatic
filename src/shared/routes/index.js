@@ -1,3 +1,7 @@
-import boot from '../components/boot.js';
+import React from 'react';
+import { Route } from 'react-router';
+import App from '../components/App/App';
 
-export default boot.routes;
+export default (
+  <Route path="*" component={App} />
+);

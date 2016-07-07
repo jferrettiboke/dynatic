@@ -30,14 +30,14 @@ function renderPage(appHtml, head) {
 }
 
 app.get('*', (req, res) => {
-  match({ routes: routes, location: req.url }, (err, redirect, props) => {
+  match({ routes, location: req.url }, (err, redirect, props) => {
     if (err) {
       res.status(500).send(err.message);
     } else if (redirect) {
       res.redirect(redirect.pathname + redirect.search);
     } else if (props) {
       const appHtml = renderToString(<RouterContext {...props} />);
-      let head = Helmet.rewind();
+      const head = Helmet.rewind();
       res.send(renderPage(appHtml, head));
     } else {
       res.status(404).send('Not Found');

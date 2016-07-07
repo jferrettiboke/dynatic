@@ -1,0 +1,83 @@
+.header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 40px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  margin-top: 5px;
+}
+
+.button {
+  text-align: right;
+  font-size: 30px;
+}
+
+.logo a,
+.logo a:hover,
+.logo a:visited,
+.logo a:active,
+.button a,
+.button a:hover,
+.button a:visited,
+.button a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.fullScreen {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 105;
+}
+
+.fullScreenActive > a,
+a.fullScreenActive {
+  z-index: 110;
+  position: fixed;
+  color: black !important;
+}
+
+.menu {
+  text-align: center;
+  position: relative;
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.menu ul,
+.menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a,
+.menu a:hover,
+.menu a:visited,
+.menu a:active {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  padding: 5px 0;
+  display: inline-block;
+  color: black;
+}

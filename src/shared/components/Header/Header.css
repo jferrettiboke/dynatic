@@ -1,0 +1,31 @@
+.header {
+  height: 320px;
+  min-height: 320px;
+  line-height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+}
+
+.header::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 60px;
+  letter-spacing: 5px;
+  line-height: 1.3;
+  color: white;
+  text-transform: uppercase;
+}

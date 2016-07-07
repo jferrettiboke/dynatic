@@ -1,5 +1,7 @@
-import config from '../../../data/__config.json';
+import Landing from './Landing/Landing';
+import ItemDetail from './Item/ItemDetail';
 
-const theme = require(`./themes/${config.currentTheme}/boot.js`);
-
-export default theme.default;
+export default ({
+  Landing,
+  ItemDetail
+});

@@ -1,0 +1,40 @@
+.item {
+  height: 320px;
+  min-height: 320px;
+  line-height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.item::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.item:hover::before {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.item a {
+  position: relative;
+  z-index: 1;
+}
+
+.item h3 {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 5px;
+  line-height: 1.3;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 50px;
+}

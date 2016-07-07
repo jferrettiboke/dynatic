@@ -1,0 +1,21 @@
+.footer {
+  padding: 50px 0;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 0.75em;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+
+.footer a {
+  color: #aaa;
+}
+
+.separator {
+  color: tomato;
+  font-size: 6px;
+  position: relative;
+  top: -1px !important;
+}

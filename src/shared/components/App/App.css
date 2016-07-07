@@ -1,0 +1,104 @@
+main {
+  padding: 150px 0;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 2.5rem;
+  color: #404040;
+  margin: 30px 0 !important;
+}
+
+main p:last-child {
+  margin-bottom: 0;
+}
+
+main img {
+  margin: 50px 0;
+}
+
+/*
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+https://highlightjs.org/static/demo/styles/github.csss
+*/
+
+pre,
+code {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #23241f !important;
+  border-radius: 5px;
+}
+
+pre,
+code,
+:global(.hljs-tag),
+:global(.hljs-subst) {
+  color: #f8f8f2 !important;
+}
+
+:global(.hljs-strong),
+:global(.hljs-emphasis) {
+  color: #a8a8a2;
+}
+
+:global(.hljs-bullet),
+:global(.hljs-quote),
+:global(.hljs-number),
+:global(.hljs-regexp),
+:global(.hljs-literal),
+:global(.hljs-link) {
+  color: #ae81ff;
+}
+
+:global(.hljs-code),
+:global(.hljs-title),
+:global(.hljs-section),
+:global(.hljs-selector-class) {
+  color: #a6e22e;
+}
+
+:global(.hljs-strong) {
+  font-weight: bold;
+}
+
+:global(.hljs-emphasis) {
+  font-style: italic;
+}
+
+:global(.hljs-keyword),
+:global(.hljs-selector-tag),
+:global(.hljs-name),
+:global(.hljs-attr) {
+  color: #f92672;
+}
+
+:global(.hljs-symbol),
+:global(.hljs-attribute) {
+  color: #66d9ef;
+}
+
+:global(.hljs-params),
+:global(.hljs-class .hljs-title) {
+  color: #f8f8f2;
+}
+
+:global(.hljs-string),
+:global(.hljs-type),
+:global(.hljs-built_in),
+:global(.hljs-builtin-name),
+:global(.hljs-selector-id),
+:global(.hljs-selector-attr),
+:global(.hljs-selector-pseudo),
+:global(.hljs-addition),
+:global(.hljs-variable),
+:global(.hljs-template-variable) {
+  color: #e6db74;
+}
+
+:global(.hljs-comment),
+:global(.hljs-deletion),
+:global(.hljs-meta) {
+  color: #75715e;
+}
