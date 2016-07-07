@@ -4,7 +4,6 @@ import styles from './ItemDetailFooter.css';
 import '../App/App.css';
 
 const ItemDetailFooter = props => {
-  console.log(props);
   if (props.category === 'post') {
     return (
       <footer className={styles.footer}>
